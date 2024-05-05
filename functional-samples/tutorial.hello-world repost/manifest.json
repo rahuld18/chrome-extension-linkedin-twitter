@@ -1,0 +1,25 @@
+{
+  "name": "Repost",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "icon-48.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.linkedin.com/mynetwork/",
+        "https://www.linkedin.com/search/*",
+        "https://www.linkedin.com/*"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["scripting", "activeTab","storage","alarms"]
+}

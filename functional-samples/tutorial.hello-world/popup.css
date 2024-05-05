@@ -1,0 +1,26 @@
+.sidepanel {
+    height: 300px;
+    width: 200px;
+  }
+
+  #send-request-button{
+    background-color: #008CBA;
+    margin: 10px;
+    height:50px;
+    color: white;
+    border-radius: 20px;
+    width: 180px;
+    font-weight: bold;
+  }
+
+  #peoples{
+height:50px;
+margin: 10px;
+border-radius: 10px;
+  }
+
+  #msg{
+    height:100px;
+    margin: 10px;
+   
+  }
